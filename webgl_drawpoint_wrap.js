@@ -34,7 +34,7 @@
             '}';
         // 片元着色器源程序
         var fsSrc = 'void main() {' +
-            'gl_FragColor = vec4(1.0, 0.0, 1.0, 0.75);' + // 设置颜色
+            'gl_FragColor = vec4(1.0, 0.5, .3, 0.75);' + // 设置颜色
             '}';
         // 1.初始化着色器
         glUtil.initShaders(vsSrc, fsSrc);
@@ -46,7 +46,7 @@
             return;
         }
         // 把顶点位置传递给attribute变量
-        gl.vertexAttrib3f(a_Position, 0.5, 0.0, 0.0);
+        gl.vertexAttrib3f(a_Position, 0.25, 0.0, 0.0);
 
         // 绘制点
         gl.drawArrays(gl.POINTS, 0, 1);

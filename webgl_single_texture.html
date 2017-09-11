@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>texture</title>
+    <style>
+        body {
+            background-color: rgba(255, 0, 255, 0.75);
+        }
+    </style>
+</head>
+<body>
+<h5>webgl</h5>
+<h5>纹理映射，贴图</h5>
+<ol>
+    <li>在顶点着色器中为每个顶点指定纹理坐标</li>
+    <li>然后在片元着色器中根据每个片元的纹理坐标从纹理图像中抽取纹素颜色</li>
+</ol>
+<canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+</canvas>
+
+<script src="./lib/webgl_util.js"></script>
+<script src="webgl_single_texture.js"></script>
+</body>
+</html>
